@@ -1,8 +1,7 @@
 package repositories
 
 import (
-	"rocs/model"
-
+	"github.com/RocsSun/rocs/model"
 	"github.com/jinzhu/gorm"
 )
 

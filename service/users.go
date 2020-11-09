@@ -1,9 +1,8 @@
 package service
 
 import (
-	"rocs/model"
-	"rocs/repositories"
-
+	"github.com/RocsSun/rocs/model"
+	"github.com/RocsSun/rocs/repositories"
 	"github.com/mlogclub/simple"
 )
 
@@ -20,5 +19,5 @@ func NewUserService() *UserService {
 }
 
 func (r *UserService) Get(id int64) *model.User {
-	return r.UserRepository.Get(simple.GetDB(), id)
+	return r.UserRepository.Get(simple.DB(), id)
 }
